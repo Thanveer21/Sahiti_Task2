@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Website</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/43a411e719.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript">
+function pop(div) {
+    console.log("hellos");
+    document.getElementById(div).style.display = 'block';
+}
+
+function hide(div) {
+    alert("Thank you for the feedback!");
+    document.getElementById(div).style.display = 'none';
+}
+//To detect escape button
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        alert("Thank you for the feedback!");
+        hide('popDiv');
+    }
+};
+</script>
+
+<body>
+    <section id="title">
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">Website</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">More</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contact us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Lorem ipsum dolor.</h1>
+                    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple">
+                            &nbsp;&nbsp;
+                        </i>Download</button>
+                    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>
+                        &nbsp;&nbsp;
+                        Download</button>
+                </div>
+                <div class="col-lg-6">
+                    <img class="title-image" src="https://picsum.photos/300/350?random=2" width="300px" alt="iphone-mockup">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section id="features">
+        <div class="">
+            <div class="row">
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-bullseye fa-4x"></i>
+                    <h3>Easy to Use</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-check-circle fa-4x"></i>
+                    <h3>Easy to use.</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="feature-box col-lg-4">
+                    <i class="icon fas fa-heart fa-4x"></i>
+                    <h3>Easy to Use</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipiscing elit. Officiis, neque.</h3>
+                    <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+                    <em>Pebbles, New York</em>
+                </div>
+                <div class="carousel-item">
+                    <h3 class="testimonial-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Officiis, neque.</h3>
+                    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+                    <em>Beverly, Illinois</em>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Press -->
+    <section id="press">
+        <img class="press-logo" src="images/t4.jpg" alt="tc-logo">
+        <img class="press-logo" src="images/t2.jpg" alt="tnw-logo">
+        <img class="press-logo" src="images/t3.jpg" alt="biz-insider-logo">
+        <img class="press-logo" src="images/t1.jpg" alt="mashable-logo">
+    </section>
+    <div id="popDiv" class="ontop">
+        <div id="popup">
+            <center>
+                <h3>FEEDBACK</h3>
+                <button onclick="onClick=hide('popDiv')"><i class=" fas fa-heartbeat">&nbsp;&nbsp;BAD</i></button>
+                <button onclick="onClick=hide('popDiv')"><i class="far fa-heart">&nbsp;&nbsp;GOOD</i></button>
+            </center>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="social-icon container-fluid">
+            <h3>CONTACT US AT</h3>
+            <i class="social-icon fab fa-facebook"></i>
+            <i class="social-icon fab fa-twitter"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <i class="social-icon fas fa-envelope"></i>
+            <hr>
+            <p style="font-family: 'Pattaya', sans-serif;">© Naseer Thanveer</p>
+        </div>
+    </footer>
+    <!-- Modal -->
+    <div id="hiden" class="sticky">
+        <p class="sp">Thank you for Visting!
+            <button class="sbtn" onClick="pop('popDiv')"> Rate Us</button>
+            <button onClick="hide()" style="color: black; background: none; border: none; top: 0;float: right;"><i class="fas fa-times"></i></button>
+        </p>
+    </div>
+    <script type="text/javascript">
+    function hide() {
+        document.getElementById('hiden').style.display = 'none';
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
